@@ -11,4 +11,4 @@ query() {
 
 janet "$(dirname "$0")/version-diff.janet" \
   <(query) \
-  <(query -af ~/dotfiles/user.nix)
+  <(query -af ~/.config/nixpkgs/jmc.nix)
