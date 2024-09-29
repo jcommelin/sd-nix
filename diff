@@ -6,7 +6,7 @@ set -euo pipefail
 # prints what will happen if you run sync
 
 query() {
-  nix-env -I .nix-defexpr/channels/ -q "$@" --json | jq -r '.[] | .pname + " " + .version'
+  nix-env -q "$@" --json | jq -r '.[] | .pname + " " + .version'
 }
 
 janet "$(dirname "$0")/version-diff.janet" \

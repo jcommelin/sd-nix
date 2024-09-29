@@ -10,4 +10,4 @@
 
 set -euo pipefail
 
-nix-env -I .nix-defexpr/channels/ -irf ~/.config/nixpkgs/jmc.nix
+nix-env -irf ~/.config/nixpkgs/jmc.nix
